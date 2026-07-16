@@ -1,17 +1,15 @@
-# Quartz v5
+# 🛡️ Secure Programming Laboratory
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Questo repository raccoglie gli appunti e il materiale didattico relativi al corso di **Secure Programming Laboratory**. 
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+L'obiettivo del corso (e di queste note) è comprendere l'asimmetria tra attacco e difesa, imparare a identificare le vulnerabilità del software e applicare le migliori pratiche per progettare, sviluppare e distribuire sistemi intrinsecamente sicuri.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+---
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## 📝 Contenuto in Sintesi
 
-## Sponsors
+Gli appunti sono strutturati in tre macro-aree tematiche:
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+*   **Software & Web Security:** Analisi approfondita delle vulnerabilità OWASP più comuni (SQLi, XSS, XXE, CSRF), gestione sicura delle sessioni (Auth/Access Control) e sicurezza in ambiente Mobile (Android e iOS).
+*   **DevSecOps & Cloud:** Integrazione della sicurezza nel ciclo di vita del software, gestione sicura del codice tramite Git/GitHub e protezione delle infrastrutture Cloud.
+*   **IoT & Robotica (ROS 2):** Studio delle problematiche di sicurezza nei dispositivi embedded/IoT e implementazione di comunicazioni sicure tramite DDS in ambito robotico.
