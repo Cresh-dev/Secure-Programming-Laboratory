@@ -10,11 +10,11 @@ tags:
 
 **Modello Standard (Sincrono):** L'utente fa una richiesta, deve attendere che il server la elabori e la pagina viene ricaricata per mostrare il risultato.
 
-![[{561B2929-4413-4B52-A582-5A994D6B5382}.png|Ajax e Json]]
+![[ajax-e-json.png|Ajax e Json]]
 
 **Modello AJAX (Asincrono):** Le richieste avvengono in background tramite un "AJAX Engine". L'utente continua a interagire con la pagina mentre i dati vengono trasferiti e l'interfaccia si aggiorna solo dove necessario.
 
-![[{51EA2F56-A944-4440-918F-A41F2EEC3F27}.png|Ajax e Json]]
+![[ajax-e-json-2.png|Ajax e Json (2)]]
 
 > [!NOTE] **Esempio: completamento automatico di ricerca su Google**
 > 1. L'utente inizia a digitare nella barra di ricerca di Google.
@@ -75,7 +75,7 @@ Il **JSON** (JavaScript Object Notation) è il formato standard per lo scambio d
 
 ### Oggetti ({ })
 
-![[{C5813636-1350-47D0-A7E5-36C6BB5E893A}.png|Ajax e Json — Oggetti ({ })]]
+![[ajax-e-json-oggetti.png|Ajax e Json — Oggetti ({ })]]
 
 - Rappresentano un insieme non ordinato di coppie **nome-valore**.
 - Il "nome" deve sempre essere una stringa racchiusa tra doppi apici.
@@ -84,7 +84,7 @@ Il **JSON** (JavaScript Object Notation) è il formato standard per lo scambio d
 
 ### Array (\[\])
 
-![[{37305DFD-2D09-4508-8343-9B7FE56920A0}.png|Ajax e Json — Array (\[\])]]
+![[ajax-e-json-array.png|Ajax e Json — Array ()]]
 
 - Rappresentano un insieme ordinato di valori.
 - I valori sono separati da virgole e racchiusi tra parentesi quadre.
