@@ -1,10 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
+# GENERATO da Sites/tools/sync.mjs a partire da tools/quartz-shared.yaml: non modificare a mano.
 configuration:
   pageTitle: SPL
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
-  analytics: { provider: "google", tagId: "G-SMCR0BZTPQ" }
+  analytics:
+    provider: google
+    tagId: G-SMCR0BZTPQ
   locale: it-IT
   baseUrl: cresh-dev.github.io/Secure-Programming-Laboratory/
   ignorePatterns:
@@ -16,29 +19,29 @@ configuration:
     cdnCaching: true
     typography:
       header: Schibsted Grotesk
-      body: Source Sans Pro
+      body: Inter
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#ffffff"
+        lightgray: "#e2e8f0"
+        gray: "#64748b"
+        darkgray: "#334155"
+        dark: "#0f172a"
+        secondary: "#4f46e5"
+        tertiary: "#6366f1"
+        highlight: rgba(79, 70, 229, 0.08)
+        textHighlight: "#fde04788"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0b1120"
+        lightgray: "#1e293b"
+        gray: "#94a3b8"
+        darkgray: "#cbd5e1"
+        dark: "#f1f5f9"
+        secondary: "#818cf8"
+        tertiary: "#a5b4fc"
+        highlight: rgba(129, 140, 248, 0.12)
+        textHighlight: "#a1620788"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -147,12 +150,14 @@ plugins:
       position: left
       priority: 50
   - source: github:quartz-community/graph
-    enabled: false
+    enabled: true
     options:
       localGraph:
-        removeTags: [".*"]
+        removeTags:
+          - .*
       globalGraph:
-        removeTags: [".*"]
+        removeTags:
+          - .*
     layout:
       position: right
       priority: 10
@@ -180,7 +185,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -215,12 +220,6 @@ plugins:
     layout:
       position: afterBody
       priority: 10
-  - source: github:quartz-community/footer
-    enabled: true
-    options:
-      links:
-        "Autore: Alessio Crescenzio": "mailto:alessiocrescenzio100@gmail.com"
-        "Licenza CC BY-NC-SA 4.0": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -241,7 +240,6 @@ plugins:
       includeAll: false
       includedProperties:
         - description
-        - tags
         - aliases
       excludedProperties: []
       hidePropertiesView: false
@@ -252,6 +250,25 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: ../quartz-cresh-theme/site-header
+    enabled: true
+    options:
+      repo: Secure-Programming-Laboratory
+    layout:
+      position: beforeBody
+      priority: 1
+  - source: ../quartz-cresh-theme/course-meta
+    enabled: true
+    options:
+      professore: Prof. Giuseppe Loseto
+    layout:
+      position: beforeBody
+      priority: 11
+  - source: ../quartz-cresh-theme/footer
+    enabled: true
+    options:
+      repo: Secure-Programming-Laboratory
+      email: alessiocrescenzio100@gmail.com
 layout:
   groups:
     toolbar:
@@ -260,10 +277,18 @@ layout:
       gap: 0.5rem
   byPageType:
     "404":
+      exclude:
+        - article-title
+        - content-meta
+        - tag-list
+        - note-properties
+        - breadcrumbs
+        - course-meta
+        - reader-mode
       positions:
-        beforeBody: []
         left: []
         right: []
+      template: default
     content: {}
     folder:
       exclude:
