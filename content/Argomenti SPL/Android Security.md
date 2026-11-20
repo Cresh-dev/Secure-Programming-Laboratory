@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #android
-
+---
+title: Android Security
+description: I dispositivi mobili si definiscono come sistemi computazionali leggeri e portatili, caratterizzati tuttavia da risorse di calcolo ed energia limitate.
+tags:
+  - informatica
+  - cybersecurity
+  - android
 ---
 I dispositivi mobili si definiscono come sistemi computazionali leggeri e portatili, caratterizzati tuttavia da risorse di calcolo ed energia limitate. Dal punto di vista strutturale presentano un hardware eterogeneo e molteplici sistemi di interfaccia (touchscreen, microfono, sensori), pur dovendo garantire un'estrema affidabilità nelle loro funzioni di base, come la connettività telefonica. In questo scenario si colloca **Android**, un sistema operativo open-source basato sul kernel Linux, progettato specificamente per dispositivi mobili touchscreen.
 

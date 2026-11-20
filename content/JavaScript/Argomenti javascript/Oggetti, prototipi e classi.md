@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Oggetti, prototipi e classi
+description: Gli oggetti in JavaScript sono collezioni arbitrarie di proprietà, più precisamente array associativi mutabili le cui chiavi rappresentano i nomi delle…
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 Gli oggetti in JavaScript sono collezioni arbitrarie di proprietà, più precisamente array associativi mutabili le cui chiavi rappresentano i nomi delle proprietà. Ad esempio:
 

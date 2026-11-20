@@ -1,5 +1,9 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: Cloud Computing Security
+description: Il cloud è un modello che permette l'accesso on-demand a un pool condiviso di risorse configurabili (server, storage, applicazioni) con uno sforzo minimo di…
+tags:
+  - informatica
+  - cybersecurity
 ---
 ==Il cloud è un modello che permette l'accesso on-demand a un pool condiviso di risorse configurabili (server, storage, applicazioni) con uno sforzo minimo di gestione==. Caratteristiche Essenziali
 
@@ -26,7 +30,7 @@ Il concetto di sicurezza nel cloud ruota attorno al **Shared Responsibility Mode
 - **PaaS (Platform as a Service)**: ==Il provider gestisce anche l'OS; il cliente si occupa solo di applicazioni e dati (es. Azure Web Apps)==.
 - **SaaS (Software as a Service)**: ==Il provider gestisce quasi tutto lo stack; il cliente è responsabile solo dei propri dati (es. Microsoft Office 365)==.
 
-![[Screenshot 2026-05-07 at 09.23.48.png]]
+![[cloud-computing-security-modelli-di-servizio-e-responsabilita.png|Cloud Computing Security — Modelli di Servizio e Responsabilità]]
 
 ### L'esempio di AWS 
 
@@ -65,7 +69,7 @@ Best Practice per le VM:
 - Disabilitare l'accesso tramite password a favore dell'**autenticazione SSH tramite chiavi**.
 - Ridurre la superficie di attacco installando solo i pacchetti necessari da fonti fidate.
 
-![[Screenshot 2026-05-07 at 10.37.51.png]]
+![[cloud-computing-security-sicurezza-dell-infrastruttura-e-virtualizzazione.png|Cloud Computing Security — Sicurezza dell'Infrastruttura e Virtualizzazione]]
 
 ### Secure Shell (SSH) e Autenticazione
 
@@ -74,7 +78,7 @@ Best Practice per le VM:
 1. Il server invia una sfida crittografata con la **chiave pubblica** del cliente.
 2. Solo la **chiave privata** corrispondente può risolvere la sfida per stabilire la sessione.
 
-![[Screenshot 2026-05-07 at 11.09.32.png]]
+![[cloud-computing-security-secure-shell-ssh-e-autenticazione.png|Cloud Computing Security — Secure Shell (SSH) e Autenticazione]]
 
 ### Sicurezza di Rete in AWS
 
@@ -86,7 +90,7 @@ Il controllo del traffico avviene attraverso diversi livelli di isolamento:
 | **NACL (Network ACL)** | Subnet                     | **Stateless**: ogni pacchetto deve essere autorizzato esplicitamente in entrata e uscita. |
 | **VPC**                | Rete Logica                | Segmento isolato dove definire range IP e tabelle di routing.                             |
 
-![[Screenshot 2026-05-07 at 11.25.49.png]]
+![[cloud-computing-security-sicurezza-di-rete-in-aws.png|Cloud Computing Security — Sicurezza di Rete in AWS]]
 
 > [!NOTE] Esempio pratico
 > Se si vuole ospitare un sito web su AWS, si crea una **singola istanza EC2**, si installa un server web (come Apache o Nginx) e poi bisogna configurare un **Security Group** per permettere il traffico sulla porta 80 (HTTP). Quell'ambiente isolato e configurato è l'istanza.
@@ -118,7 +122,7 @@ La ridondanza è la misura tecnica necessaria per contrastare i guasti hardware 
 - **Ridondanza Gestita (AWS Managed):** Servizi come EFS (Elastic File System) replicano nativamente i dati su più **Availability Zones (AZ)** all'interno della stessa Regione. Ciò garantisce che il guasto di un intero data center non comporti la perdita di informazioni.
 - **Ridondanza Gestita dall'Utente:** Per scenari di _Disaster Recovery_ critici, è responsabilità dell'architetto implementare repliche **Cross-Region** (es. snapshot di EC2 o RDS spostati in una regione geografica differente), proteggendo il sistema da eventi catastrofici su scala regionale.
 
-![[Screenshot 2026-05-11 at 09.24.22.png]]
+![[cloud-computing-security-data-redundancy.png|Cloud Computing Security — Data Redundancy]]
 
 #### Identity and Access Management (IAM)
 

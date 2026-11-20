@@ -1,5 +1,9 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: Obiettivi della sicurezza
+description: "Il percorso verso la comprensione della sicurezza inizia con la distinzione tra concetti chiave:"
+tags:
+  - informatica
+  - cybersecurity
 ---
 Il percorso verso la comprensione della sicurezza inizia con la distinzione tra concetti chiave:
 
@@ -18,7 +22,7 @@ Il pilastro della sicurezza è la **Triade CIA**, che definisce tre obiettivi es
 2. **Integrità (Integrity):** ==Garanzia che i dati rimangano inalterati se non da utenti autorizzati==.
 3. **Disponibilità (Availability):** ==Certezza che le risorse siano accessibili agli utenti autorizzati quando necessario==.
 
-![[{1E03FC2D-9CED-4A90-82C2-83A90E3CBD50}.png]]
+![[{1E03FC2D-9CED-4A90-82C2-83A90E3CBD50}.png|Obiettivi della sicurezza — Modelli di Sicurezza: Dalla Triade CIA all'Esade di Parker]]
 
 ### Parkerian Hexad
 

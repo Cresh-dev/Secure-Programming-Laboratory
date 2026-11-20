@@ -1,7 +1,12 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
 ---
-![[Screenshot 2025-05-06 at 16.20.54.png]]
+title: Controllo del flusso
+description: Questi costrutti permettono di deviare il flusso del programma eseguendo blocchi di codice differenti in base al verificarsi di determinate condizioni.
+tags:
+  - informatica
+  - javascript
+  - linguaggio
+---
+![[controllo-del-flusso.png|Controllo del flusso]]
 ## Strutture Condizionali (Selezione)
 
 Questi costrutti permettono di deviare il flusso del programma eseguendo blocchi di codice differenti in base al verificarsi di determinate condizioni.

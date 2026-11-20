@@ -1,5 +1,9 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: Access
+description: Il Controllo degli Accessi (Access Control) è il processo cardine della sicurezza informatica deputato a regolare l'utilizzo delle risorse di un sistema…
+tags:
+  - informatica
+  - cybersecurity
 ---
 ==Il Controllo degli Accessi (Access Control) è il processo cardine della sicurezza informatica deputato a regolare l'utilizzo delle risorse di un sistema secondo una determinata politica di sicurezza==. Consente l'accesso esclusivamente alle entità autorizzate (che si tratti di utenti, programmi, processi o altri sistemi).
 
@@ -8,7 +12,7 @@ Secondo le definizioni formali dei principali enti di standardizzazione:
 - **NIST:** Lo definisce come il processo di concessione o diniego di richieste specifiche per ottenere e utilizzare informazioni, servizi di elaborazione correlati ed accedere a strutture fisiche.
 - **IETF:** Lo descrive come il meccanismo con cui l'uso delle risorse di sistema viene regolato in accordo a una politica di sicurezza.
 
-### I Tre Pilastri: Soggetti, Oggetti e Diritti di Accesso
+## I Tre Pilastri: Soggetti, Oggetti e Diritti di Accesso
 
 Il funzionamento di qualsiasi modello di controllo degli accessi si basa sulla relazione tra tre elementi:
 

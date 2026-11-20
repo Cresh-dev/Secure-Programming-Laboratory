@@ -1,17 +1,21 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: DevSecOps
+description: Il DevOps è un insieme di pratiche e filosofie culturali nate per accorciare il ciclo di vita dello sviluppo software, garantendo rilasci frequenti e…
+tags:
+  - informatica
+  - cybersecurity
 ---
 Il **DevOps** è un insieme di pratiche e filosofie culturali nate per accorciare il ciclo di vita dello sviluppo software, garantendo rilasci frequenti e affidabili in linea con gli obiettivi di business. Si basa sulle cosiddette **"Sette C"**:
 
 - **Continuous Development, Continuous Integration, Continuous Testing, Continuous Deployment, Continuous Feedback, Continuous Monitoring e Continuous Operations.**
 
-![[Pasted image 20260616160809.png]]
+![[devsecops.png|DevSecOps]]
 
 Il **DevSecOps** estende questo modello integrando la **sicurezza in ogni fase** del ciclo di vita. L'obiettivo è abbattere le barriere tra team di sviluppo, operazioni e sicurezza per garantire consegne veloci ma sicure.
 
-![[Pasted image 20260616160832.png]]
+![[devsecops-2.png|DevSecOps (2)]]
 
-### Componenti Core del DevSecOps
+## Componenti Core del DevSecOps
 
 - **Automated Security Testing:** Test regolari e automatici per il rilevamento precoce delle vulnerabilità.
 - **Security as Code:** Integrazione delle misure di sicurezza direttamente nelle pipeline CI/CD.

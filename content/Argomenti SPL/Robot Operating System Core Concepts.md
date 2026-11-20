@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #ros
-
+---
+title: Robot Operating System Core Concepts
+description: Il Robot Operating System (ROS) non è un vero e proprio sistema operativo, ma un middleware modulare e adattabile che facilita la costruzione di sistemi…
+tags:
+  - informatica
+  - cybersecurity
+  - ros
 ---
 ==Il Robot Operating System (ROS) non è un vero e proprio sistema operativo, ma un middleware modulare e adattabile che facilita la costruzione di sistemi robotici complessi==. Negli anni, si è evoluto in un ecosistema ricchissimo di algoritmi, utility e applicazioni.
 
@@ -28,21 +33,21 @@ Il passaggio alla versione 2 ha introdotto cambiamenti strutturali profondi:
 
 Il mattone fondamentale di un sistema ROS è il **Nodo**. Ogni nodo ha un ruolo modulare e specifico (es. gestire una telecamera, controllare i motori o processare dati sensoriali).
 
-![[Screenshot 2026-05-13 at 15.52.52.png]]
+![[robot-operating-system-core-concepts-i-concetti-core-nodi-e-comunicazione.png|Robot Operating System Core Concepts — I Concetti Core: Nodi e Comunicazione]]
 
 ### Modalità di Comunicazione
 
 1. **Topic (Argomenti)**: ==Modello di comunicazione asincrona di tipo "chat room". Molti nodi possono pubblicare (Publishers) o ricevere (Subscribers) dati sullo stesso topic contemporaneamente==. È ideale per flussi continui di dati come sensori laser o posizioni.
 
-![[Screenshot 2026-05-13 at 16.28.01.png]]
+![[robot-operating-system-core-concepts-modalita-di-comunicazione.png|Robot Operating System Core Concepts — Modalità di Comunicazione]]
 
 2. **Service (Servizi)**: ==Modello sincrono "chiamata e risposta" (call-and-response), simile a una procedura remota==. Viene usato per operazioni rapide e deterministiche, come lo spawn di un robot in una simulazione. Esiste un solo server per ogni servizio, ma possono esserci più client.
 
-![[Screenshot 2026-05-13 at 16.29.26.png]]
+![[robot-operating-system-core-concepts-modalita-di-comunicazione-2.png|Robot Operating System Core Concepts — Modalità di Comunicazione (2)]]
 
 3. **Action (Azioni)**: ==Pensate per task a lunga durata che richiedono feedback costante o la possibilità di essere interrotti (preemption)==. Un esempio tipico è la pianificazione di un percorso in navigazione. Le azioni combinano internamente servizi (per obiettivi e risultati) e topic (per il feedback).
 
-![[Screenshot 2026-05-13 at 16.28.48.png]]
+![[robot-operating-system-core-concepts-modalita-di-comunicazione-3.png|Robot Operating System Core Concepts — Modalità di Comunicazione (3)]]
 
 > [!NOTE] Esempio di uso delle action rispetto ai service
 > Uno scenario che si può osservare è la navigazione autonoma di un robot verso un punto dello spazio: l’azione permette di monitorare i metri rimanenti e annullare il movimento se compare un ostacolo imprevisto, laddove un servizio bloccherebbe il nodo client senza controllo in itinere. 
@@ -51,7 +56,7 @@ Il mattone fondamentale di un sistema ROS è il **Nodo**. Ogni nodo ha un ruolo 
 
 Attraverso la variabile d'ambiente `ROS_DOMAIN_ID`, ROS 2 permette di isolare logicamente diverse macchine sulla stessa rete. Nodi con ID diversi non comunicheranno tra loro, evitando interferenze in ambienti con più robot.
 
-![[Screenshot 2026-05-13 at 15.56.12.png]]
+![[robot-operating-system-core-concepts-segregazione-della-rete-rosdomainid.png|Robot Operating System Core Concepts — Segregazione della Rete: ROSDOMAINID]]
 
 ## API Unificate
 

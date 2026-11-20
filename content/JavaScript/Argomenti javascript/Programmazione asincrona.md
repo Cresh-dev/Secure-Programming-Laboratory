@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Programmazione asincrona
+description: La programmazione asincrona in JavaScript è un insieme di tecniche e funzionalità che permettono di eseguire operazioni “in background” senza bloccare il…
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 La **programmazione asincrona in JavaScript** è un insieme di tecniche e funzionalità che permettono di eseguire operazioni “in background” senza bloccare il flusso principale del programma (il _main thread_). È fondamentale perché JavaScript è **single-threaded**, quindi senza asincronia tutto resterebbe fermo in attesa di operazioni lente (es. richieste di rete, accesso a file, timer).
 

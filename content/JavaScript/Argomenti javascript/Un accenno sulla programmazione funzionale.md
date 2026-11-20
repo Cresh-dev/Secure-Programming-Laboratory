@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Un accenno sulla programmazione funzionale
+description: "JavaScript non implementa programmazione funzionale pura ma ne mutua alcune idee: funzioni come oggetti di prima classe, chiusure, funzioni anonime, … Le…"
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 JavaScript non implementa programmazione funzionale pura ma ne mutua alcune idee: funzioni come oggetti di prima classe, chiusure, funzioni anonime, … ==Le funzioni in JavaScript sono oggetti di prima classe: le loro definizioni (in un binding o anonime) rappresentano “valori” che possono essere passati come argomenti ad altre funzioni (callback), possono essere restituiti come valori da altre funzioni e possono essere inseriti in qualunque struttura dati==.
 
@@ -12,7 +17,7 @@ mailbox.sendMessage(message, () => console.log(“Messaggio inviato”));
 
 ## Il this
 
-In JavaScript, la parola chiave `this` fa **riferimento al contesto di esecuzione corrente**. Il valore di `this` cambia a seconda di **come** e **dove** viene invocata una funzione.  Non è legato alla funzione stessa, ma **al modo in cui viene chiamata**.
+In JavaScript, la parola chiave `this` fa **riferimento al contesto di esecuzione corrente**. Il valore di `this` cambia a seconda di **come** e **dove** viene invocata una funzione. Non è legato alla funzione stessa, ma **al modo in cui viene chiamata**.
 
 ### Contesto globale (o fuori da qualsiasi funzione/class)
 

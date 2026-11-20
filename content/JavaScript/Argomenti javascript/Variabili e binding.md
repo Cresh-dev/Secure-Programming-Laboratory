@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Variabili e binding
+description: In JavaScript, per conservare valori e tenere traccia dello stato di un programma (che cambia nel tempo), si utilizzano le variabili, chiamate anche binding…
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 In JavaScript, per conservare valori e tenere traccia dello stato di un programma (che cambia nel tempo), si utilizzano le **variabili**, chiamate anche **binding** (legami). Un esempio classico di dichiarazione e inizializzazione è:
 
@@ -31,7 +36,7 @@ Lo _scope_ determina in quali parti del codice una variabile è accessibile.
 Consiste nel cambiare il valore precedentemente salvato dentro una variabile già esistente (es. `a = 10;`).
 
 - **`var` e `let`:** ==Consentono la riassegnazione. Il valore può essere sovrascritto liberamente nel corso del programma==.
-- **`const`:** ==NON consente la riassegnazione . Una volta assegnato un valore iniziale, questo non può più essere cambiato (è una costante)==.
+- **`const`:** ==NON consente la riassegnazione. Una volta assegnato un valore iniziale, questo non può più essere cambiato (è una costante)==.
 
 ### Redeclaration (Ridichiarazione)
 

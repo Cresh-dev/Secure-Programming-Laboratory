@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Tipi di dati in javascript
+description: "Vuoti: Il valore undefined rappresenta una variabile dichiarata ma non assegnata."
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 - **Vuoti**: Il valore undefined rappresenta una variabile dichiarata ma non assegnata. Il valore null denota un non-valore, ovvero l’assenza di valore e di informazione, può essere immaginato come un placeholder.
 - **Numeri**: Rappresentati in memoria come floating points a 64 bit (limite di rappresentazione e perdita di informazione per cifre decimali non finite). Due particolari “numeri” sono Infinity e NaN. Sui numeri è possibile applicare i classici operatori aritmetici.

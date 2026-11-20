@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: JavaScript
+description: È un linguaggio di scripting client-side introdotto nel 1995 nel browser Netscape Navigator per rendere le pagine Web “attive” e dinamiche.
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 È un linguaggio di scripting client-side introdotto nel 1995 nel browser Netscape Navigator per rendere le pagine Web “attive” e dinamiche. Attualmente è l’unico linguaggio di programmazione che i browser possono eseguire nativamente. Di seguito possiamo sottolineare una differenza fondamentale tra classi e prototipi:
 
@@ -21,7 +26,7 @@ cane.abbaia();   // "bau!"       → trovato su cane
 cane.respira();  // "sto respirando" → trovato risalendo al prototipo
 ```
 
-![[Screenshot 2026-05-04 at 10.48.53.png]]
+![[javascript.png|Javascript]]
 
 > [!NOTE] Cosa succede se non viene trovata la proprietà nella catena
 > `null` viene raggiunto **solo se la proprietà non esiste da nessuna parte** nella catena.
@@ -34,14 +39,14 @@ Il codice JS viene inserito tramite il tag `<script>`. Il documento specifica tr
 2. **`defer`:** ==Carica lo script in background; l'esecuzione avviene solo al termine del parsing del DOM (ordine di esecuzione preservato)==.
 3. **`async`:** ==Carica lo script in background; l'esecuzione avviene non appena lo scaricamento è terminato (ordine di esecuzione "load-first")==.
 
-![[Screenshot 2026-05-04 at 11.05.52.png]]
+![[javascript-integrazione-nel-documento-html.png|Javascript — Integrazione nel Documento HTML]]
 
 ## Concetti chiave del linguaggio
 
 Di seguito sono presenti i concetti e le strutture fondamentali per comprendere in maniera completa questo linguaggio:
 
 - [[Tipi di dati in javascript]]
-- [[Type coercition]]
+- [[Type coercition|Type coercion]]
 - [[Variabili e binding]]
 - [[Controllo del flusso]]
 - [[Funzioni e scope]]

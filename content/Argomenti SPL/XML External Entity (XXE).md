@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #xxe
-
+---
+title: XML External Entity (XXE)
+description: XML sta per eXtensible Markup Language.
+tags:
+  - informatica
+  - cybersecurity
+  - xxe
 ---
 XML sta per eXtensible Markup Language. ==È un linguaggio di markup progettato per memorizzare e trasportare dati. L'XXE è una vulnerabilità che permette a un attaccante di interferire con l'elaborazione dei dati XML di un'applicazione==. Sfrutta un **parser XML configurato in modo errato** che permette il caricamento di =="entità esterne", ovvero riferimenti a dati situati al di fuori del documento XML stesso==. Un attacco XXE può consentire di:
 
@@ -20,7 +25,7 @@ L'attacco si basa sulla definizione di un'**entità personalizzata** all'interno
 2. **Utilizzo dell'entità**: L'entità viene richiamata nel corpo del messaggio XML.
 3. **Elaborazione del server**: Il parser XML legge l'entità, recupera il contenuto del file richiesto e, se l'applicazione lo prevede, lo restituisce nella risposta HTTP.
 
-![[Screenshot 2026-05-05 at 10.42.34.png]]
+![[xml-external-entity-xxe-come-funziona-l-attacco.png|XML External Entity (XXE) — Come Funziona l'Attacco]]
 
 > [!NOTE] Cosa sono le entità in XML
 > Le entità agiscono come delle "scorciatoie" o segnaposto. Quando il parser XML incontra un riferimento a un'entità, lo sostituisce con il valore corrispondente definito in precedenza. Si hanno differenti tipologie di entità:

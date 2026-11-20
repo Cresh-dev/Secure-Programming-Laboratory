@@ -1,15 +1,20 @@
-_Tag:_ #informatica #cybersecurity #ajax
-
+---
+title: Ajax e Json
+description: AJAX non è un linguaggio di programmazione, ma un insieme di tecniche.
+tags:
+  - informatica
+  - cybersecurity
+  - ajax
 ---
 ==AJAX non è un linguaggio di programmazione, ma un insieme di tecniche. Il suo scopo è permettere a un client di recuperare informazioni dal server in modo veloce e "trasparente" per l'utente==.
 
 **Modello Standard (Sincrono):** L'utente fa una richiesta, deve attendere che il server la elabori e la pagina viene ricaricata per mostrare il risultato.
 
-![[{561B2929-4413-4B52-A582-5A994D6B5382}.png]]
+![[{561B2929-4413-4B52-A582-5A994D6B5382}.png|Ajax e Json]]
 
 **Modello AJAX (Asincrono):** Le richieste avvengono in background tramite un "AJAX Engine". L'utente continua a interagire con la pagina mentre i dati vengono trasferiti e l'interfaccia si aggiorna solo dove necessario.
 
-![[{51EA2F56-A944-4440-918F-A41F2EEC3F27}.png]]
+![[{51EA2F56-A944-4440-918F-A41F2EEC3F27}.png|Ajax e Json]]
 
 > [!NOTE] **Esempio: completamento automatico di ricerca su Google**
 > 1. L'utente inizia a digitare nella barra di ricerca di Google.
@@ -32,8 +37,8 @@ Tramite l'uso di javascript, possiamo combinare ed utilizzare tutte queste tecno
 - `open(method, url, async)`: Prepara la richiesta specificando il metodo (GET, POST, ecc.) e l'URL.
 - `send(data)`: Invia la richiesta al server.
 - `setRequestHeader(header, value)`: Imposta gli header HTTP (es. il tipo di contenuto).
-- `getAllResponseHeaders`:  Restituisce **tutti** gli header della risposta sotto forma di un'unica stringa. I vari header sono separati tra loro da una sequenza CRLF (ritorno a capo).
-- `getResponseHeader`: Questo metodo è più mirato,  permette di ottenere il valore testuale di uno **specifico** header indicandone il nome.
+- `getAllResponseHeaders`: Restituisce **tutti** gli header della risposta sotto forma di un'unica stringa. I vari header sono separati tra loro da una sequenza CRLF (ritorno a capo).
+- `getResponseHeader`: Questo metodo è più mirato, permette di ottenere il valore testuale di uno **specifico** header indicandone il nome.
 
 ### Proprietà e Stati
 
@@ -70,7 +75,7 @@ Il **JSON** (JavaScript Object Notation) è il formato standard per lo scambio d
 
 ### Oggetti ({ })
 
-![[{C5813636-1350-47D0-A7E5-36C6BB5E893A}.png]]
+![[{C5813636-1350-47D0-A7E5-36C6BB5E893A}.png|Ajax e Json — Oggetti ({ })]]
 
 - Rappresentano un insieme non ordinato di coppie **nome-valore**.
 - Il "nome" deve sempre essere una stringa racchiusa tra doppi apici.
@@ -79,7 +84,7 @@ Il **JSON** (JavaScript Object Notation) è il formato standard per lo scambio d
 
 ### Array (\[\])
 
-![[{37305DFD-2D09-4508-8343-9B7FE56920A0}.png]]
+![[{37305DFD-2D09-4508-8343-9B7FE56920A0}.png|Ajax e Json — Array (\[\])]]
 
 - Rappresentano un insieme ordinato di valori.
 - I valori sono separati da virgole e racchiusi tra parentesi quadre.

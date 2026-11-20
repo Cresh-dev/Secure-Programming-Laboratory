@@ -1,5 +1,9 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: Auth
+description: "Nel contesto delle transazioni digitali, è fondamentale distinguere tra due concetti chiave:"
+tags:
+  - informatica
+  - cybersecurity
 ---
 Nel contesto delle transazioni digitali, è fondamentale distinguere tra due concetti chiave:
 

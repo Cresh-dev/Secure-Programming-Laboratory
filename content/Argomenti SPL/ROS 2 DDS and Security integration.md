@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #ros
-
+---
+title: ROS 2 DDS and Security integration
+description: Nella progettazione della seconda generazione di ROS (ROS 2), la comunità si è posta il problema se migliorare il protocollo di trasporto nativo di ROS 1 o…
+tags:
+  - informatica
+  - cybersecurity
+  - ros
 ---
 Nella progettazione della seconda generazione di ROS (ROS 2), la comunità si è posta il problema se migliorare il protocollo di trasporto nativo di ROS 1 o adottare un middleware di terze parti. Dopo aver valutato diverse opzioni (tra cui ZeroMQ, Protocol Buffers e strumenti di zeroconf come Bonjour/Avahi), **DDS (Data Distribution Service)** è emerso come la scelta ideale.
 

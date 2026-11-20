@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #ios
-
+---
+title: iOS Security
+description: L'architettura di sicurezza del sistema operativo mobile iOS (sviluppato da Apple Inc.
+tags:
+  - informatica
+  - cybersecurity
+  - ios
 ---
 L'architettura di sicurezza del sistema operativo mobile iOS (sviluppato da Apple Inc. per iPhone, iPod Touch e declinato in varianti come iPadOS, watchOS e tvOS) eredita la struttura di base UNIX-like da macOS. La filosofia difensiva di Apple si articola su più livelli stratificati, partendo da componenti hardware dedicati fino ad arrivare al controllo granulare delle applicazioni, garantendo riservatezza dei dati e integrità del sistema.
 
@@ -18,7 +23,7 @@ L'architettura di sicurezza del sistema operativo mobile iOS (sviluppato da Appl
 > 3. **Cifratura al Volo:** L'AES Engine prende i dati che l'app sta scrivendo e li cifra "al volo" usando la chiave ricevuta, per poi salvarli criptati sulla memoria flash.
 > 4. **Protezione della Chiave (Wrapping):** Nel frattempo, per fare in modo che la chiave del file possa essere salvata in sicurezza insieme ai metadati del file stesso, il Secure Enclave la "impacchetta" (_wrapping_), ovvero la cifra a sua volta usando una delle _Class Keys_ (legate al passcode dell'utente).
 > 
-> In questo modo, l'AES Engine permette al dispositivo di rimanere velocissimo e di non consumare troppa batteria (grazie all'efficienza hardware) , mentre il Secure Enclave garantisce che nessuno possa rubare le chiavi, nemmeno se l'intero kernel del sistema operativo venisse compromesso da un malware.
+> In questo modo, l'AES Engine permette al dispositivo di rimanere velocissimo e di non consumare troppa batteria (grazie all'efficienza hardware), mentre il Secure Enclave garantisce che nessuno possa rubare le chiavi, nemmeno se l'intero kernel del sistema operativo venisse compromesso da un malware.
 
 - **Sensori Biometrici:**
     - **Touch ID:** Sensore di impronte digitali che mappa il flusso delle creste subdermiche. Per ragioni di sicurezza, non memorizza l'immagine o le minuzie dell'impronta (evitando che possa essere ricostruita), ma ne genera un formato vettoriale criptato e salvato esclusivamente all'interno del Secure Enclave.
@@ -39,7 +44,7 @@ I componenti e le fasi si dividono in base alla memoria di massa in cui risiedon
 3. **iBoot:** ==Bootloader di alto livello (residente nella partizione protetta BOOT della memoria NAND Flash) che ha il compito di verificare l'integrità del kernel XNU, caricarlo in memoria e avviarlo==.
 4. **Kernel:** ==Caricato nella partizione di sistema (FSYS), accessibile da kernel e userspace, che avvia il sistema operativo vero e proprio==.
 
-![[Pasted image 20260620091931.png]]
+![[ios-security-secure-boot-avvio-sicuro-e-gestione-dei-fallimenti.png|iOS Security — Secure Boot (Avvio Sicuro) e Gestione dei Fallimenti]]
 
 ### Gestione del Boot Failure (DFU vs Recovery)
 
@@ -56,7 +61,7 @@ Gli aggiornamenti software in iOS sono strettamente legati alla _root of trust_ 
 2. **Personalizzazione:** ==Il server Apple unisce l'ECID del dispositivo alle misurazioni crittografiche e firma digitalmente il pacchetto==. Ciò rende l'aggiornamento utilizzabile **esclusivamente** da quel rilevante dispositivo, impedendo il riutilizzo dei file su altri terminali.
 3. **Installazione:** ==Il dispositivo verifica la firma di Apple, controlla la corrispondenza dell'ECID e procede all'installazione assicurando, tramite i meccanismi di Secure Boot, che venga eseguito solo codice autorizzato==.
 
-![[Pasted image 20260620092009.png]]
+![[ios-security-processo-di-aggiornamento-software.png|iOS Security — Processo di Aggiornamento Software]]
 
 ## Data Protection
 
@@ -70,7 +75,7 @@ Il funzionamento si basa su una **gerarchia di chiavi crittografiche**:
 - **Class Keys (Chiavi di Classe):** ==Cifrate combinando la UID e la Passcode Key, modulano l'accesso ai file in base allo stato del dispositivo==.
 - **File Key:** ==Una chiave casuale generata per _ogni singolo file_ all'atto della creazione==.
 
-![[Pasted image 20260620092054.png]]
+![[ios-security-data-protection.png|iOS Security — Data Protection]]
 
 ### Classi di Protezione
 

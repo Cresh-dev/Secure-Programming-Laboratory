@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #csrf
-
+---
+title: Cross-Site Request Forgery (CSRF)
+description: L'attacco CSRF sfrutta la fiducia che un'applicazione web ripone nel browser di un utente già autenticato.
+tags:
+  - informatica
+  - cybersecurity
+  - csrf
 ---
 ==L'attacco CSRF sfrutta la fiducia che un'applicazione web ripone nel browser di un utente già autenticato. L'obiettivo è forzare l'utente a compiere azioni che cambiano lo stato del server== (state-changing requests), come trasferire fondi, cambiare email o password, o compromettere l'intera applicazione.
 
@@ -7,7 +12,7 @@ _Tag:_ #informatica #cybersecurity #csrf
 
 L'attacco è possibile perché il protocollo HTTP è **stateless** (senza memoria) e le applicazioni usano i **cookie di sessione** per identificare gli utenti.
 
-![[Screenshot 2026-05-05 at 13.49.18.png]]
+![[cross-site-request-forgery-csrf-come-funziona-l-attacco.png|Cross-Site Request Forgery (CSRF) — Come funziona l'attacco]]
 
 1. L'utente effettua il login in un sito legittimo e riceve un cookie di sessione.
 2. L'utente, ancora loggato, visita un sito malevolo o clicca su un link creato dall'attaccante.
@@ -71,7 +76,7 @@ Si controlla la provenienza della richiesta tramite due header:
 - **Lax**: I==l cookie viene inviato solo per richieste GET derivanti da interazioni dirette dell'utente== (es. clic su un link).
 - **None**: ==I cookie vengono inviati sempre==.
 
-![[Screenshot 2026-05-06 at 08.41.26.png]]
+![[cross-site-request-forgery-csrf-cookie-samesite.png|Cross-Site Request Forgery (CSRF) — Cookie SameSite]]
 
 ==Due URL hanno la stessa origine se e solo se coincidono esattamente tre elementi==:
 

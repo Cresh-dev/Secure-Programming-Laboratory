@@ -1,5 +1,10 @@
-_Tag:_ #informatica #cybersecurity #sql
-
+---
+title: SQL Injection
+description: L'Injection è definita come l'atto di indurre un'applicazione a includere comandi non previsti all'interno dei dati inviati a un interprete.
+tags:
+  - informatica
+  - cybersecurity
+  - sql
 ---
 ==L'Injection è definita come l'atto di indurre un'applicazione a includere comandi non previsti all'interno dei dati inviati a un interprete. Nello specifico, la SQL Injection (SQLi) manipola l'input del "data-plane" per alterare l'esecuzione di comandi SQL predefiniti==. L'attacco avviene tipicamente a causa di una **mancata separazione tra codice e dati**: l'applicazione concatena l'input dell'utente direttamente nelle stringhe di query, permettendo all'attaccante di "rompere" la struttura logica della query stessa.
 

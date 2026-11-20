@@ -1,5 +1,10 @@
-_Tag:_ #informatica #javascript #linguaggio 
-
+---
+title: Tipi di oggetti
+description: "Quando si scrive uno script per una pagina HTML, si hanno a disposizione tre categorie di oggetti:"
+tags:
+  - informatica
+  - javascript
+  - linguaggio
 ---
 Quando si scrive uno script per una pagina HTML, si hanno a disposizione tre categorie di oggetti:
 
@@ -9,7 +14,7 @@ Quando si scrive uno script per una pagina HTML, si hanno a disposizione tre cat
 
 L'oggetto **`window`** funge da contenitore globale per tutti questi elementi.
 
-![[Screenshot 2026-05-04 at 12.20.10.png]]
+![[tipi-di-oggetti.png|Tipi di oggetti]]
 
 ## Il DOM (Document Object Model)
 

@@ -1,37 +1,44 @@
 ---
 title: Secure Programming Laboratory
+description: Appunti del corso di Secure Programming Laboratory del Politecnico di Bari, dalla sicurezza delle applicazioni web a cloud, IoT, robotica e mobile.
+tags:
+  - informatica
+  - cybersecurity
 ---
+Appunti del corso di **Secure Programming Laboratory**: le principali vulnerabilità delle applicazioni web e come difendersi, fino alla sicurezza di cloud, sistemi IoT, robotica e dispositivi mobili. Le prime note fissano i concetti di base usati in tutto il corso.
 
-_Tag:_ #informatica #cybersecurity
+## Percorso consigliato
 
----
-Prima di andare nel profondo del corso, bisogna analizzare alcuni termini e concetti fondamentali che spesso sono sconosciuti o si tendono a confondere. Come prima cosa analizzeremo i seguenti termini:
+> [!percorso] 1 · Fondamenti
+> 1. [[Concetti fondamentali]]
+> 2. [[Obiettivi della sicurezza]]
+> 3. [[Malware]]
 
-- **Safety vs. Security**: La _safety_ riguarda la protezione da guasti accidentali e il funzionamento affidabile del sistema ; la _security_ riguarda la protezione da minacce intenzionali e attori malevoli.
-- **Vulnerabilità**: Una debolezza o falla nelle procedure, nel design o nell'implementazione di un sistema.
-- **Exploit**: Software o dati che sfruttano una vulnerabilità per causare comportamenti non previsti.
-- **Zero-Day**: ==Una falla sconosciuta agli sviluppatori, che lascia "zero giorni" per creare una patch prima che possa essere sfruttata==.
+> [!percorso] 2 · JavaScript e web
+> 1. [[Javascript|JavaScript]]
+> 2. [[Ajax e Json|Ajax e JSON]]
 
-La difesa sia intrinsecamente più difficile dell'attacco,  l'attaccante deve avere successo **una sola volta** e può scegliere il punto più debole invece il difensore deve proteggere **ogni punto** e avere sempre successo.
+> [!percorso] 3 · Vulnerabilità delle applicazioni web
+> 1. [[SQL Injection]]
+> 2. [[Cross-Site Scripting (XSS)]]
+> 3. [[XML External Entity (XXE)]]
+> 4. [[Cross-Site Request Forgery (CSRF)]]
 
-## Indice
+> [!percorso] 4 · Cloud, malware e controllo degli accessi
+> 1. [[Cloud Computing Security]]
+> 2. [[Malware as a Service and Rootkits]]
+> 3. [[Auth]]
+> 4. [[Access]]
 
-- [[Obiettivi della sicurezza]]
-- [[Malware]]
-- [[JavaScript]]
-- [[Ajax e Json]]
-- [[SQL Injection]]
-- [[Cross-Site Scripting (XSS)]]
-- [[XML External Entity (XXE)]]
-- [[Cross-Site Request Forgery (CSRF)]]
-- [[Cloud Computing Security]]
-- [[Malware as a Service and Rootkits]]
-- [[Auth]]
-- [[Access]]
-- [[Git e GitHub]]
-- [[Robot Operating System Core Concepts]]
-- [[Security in IoT systems]]
-- [[DevSecOps]]
-- [[ROS 2 DDS and Security integration]]
-- [[Android Security]]
-- [[iOS Security]]
+> [!percorso] 5 · Robotica, IoT e DevSecOps
+> 1. [[Robot Operating System Core Concepts]]
+> 2. [[Security in IoT systems]]
+> 3. [[DevSecOps]]
+> 4. [[ROS 2 DDS and Security integration]]
+
+> [!percorso] 6 · Sicurezza mobile
+> 1. [[Android Security]]
+> 2. [[iOS Security]]
+
+> [!info] Come usare questi appunti
+> Cerca con ⌘K (Ctrl+K su Windows e Linux), passa sui link per vederne l'anteprima e usa il grafo per esplorare i collegamenti tra le note.

@@ -1,5 +1,9 @@
-_Tag:_ #informatica #cybersecurity
-
+---
+title: Security in IoT systems
+description: Il paradigma tecnologico contemporaneo è caratterizzato da una progressiva interconnessione tra il mondo fisico e quello digitale.
+tags:
+  - informatica
+  - cybersecurity
 ---
 Il paradigma tecnologico contemporaneo è caratterizzato da una progressiva interconnessione tra il mondo fisico e quello digitale. Questa evoluzione introduce complessità rilevanti nella protezione delle informazioni, in particolare all'interno dell'Internet of Things (IoT) e nei contesti di convergenza tra Information Technology (IT) ed Operational Technology (OT).
 
@@ -33,13 +37,13 @@ L'architettura di riferimento mappa il dispositivo isolandone i confini (_Device
 - **Elementi Interni:** Unità di elaborazione (CPU), memorie (EEPROM, Flash), firmware installato e relativi servizi di scambio dati o di aggiornamento.
 - **Interfacce:** ==Possono essere _Interne_ (M2M non accessibili dall'esterno, come JTAG, UART, SPI), _Fisiche_ (porte USB, Ethernet)==, _Wireless_ (Wi-Fi, Bluetooth, BLE, ZigBee) o _Utente_ (H2M come display touch, microfoni o app web locali).
 
-![[Pasted image 20260616140338.png]]
+![[security-in-iot-systems-il-modello-del-dispositivo-iot-device-model.png|Security in IoT systems — Il Modello del Dispositivo (IoT Device Model)]]
 
 ### Il Modello dell'Attaccante (Attacker Model) e Livelli di Accesso
 
 Il profilo dell'attaccante viene categorizzato mutuando le metriche di vulnerabilità del sistema **CVSS (Common Vulnerability Scoring System)**, analizzando variabili quali l'Attack Vector (Network, Adjacent, Local, Physical), l'Attack Complexity (Low, High), i Privileges Required (None, Low, High) e la User Interaction (None, Passive, Active).
 
-![[Pasted image 20260616140421.png]]
+![[security-in-iot-systems-il-modello-dell-attaccante-attacker-model-e-livelli-di-accesso.png|Security in IoT systems — Il Modello dell'Attaccante (Attacker Model) e Livelli di Accesso]]
 
 L'ISTG declina queste metriche definendo due livelli d'accesso d'interazione con il dispositivo:
 
